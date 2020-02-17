@@ -1,0 +1,62 @@
+Description
+
+  PART 1:
+    The program "a2_q1" is designed to create an array and randomly assigns decimal values,the array
+    then randomly swaps rows and columns and prints out the results while printing out the original
+    array.
+    The files and functions that are used in the source code "a2_q1.c" are named:
+     a2q1.c with functions using:
+      double_array
+      randomize_array
+      swap_rows
+      swap_columns
+      rand_double
+      print_array
+      free_array
+    other libraries and defines used for this program is located in the header file random.h
+
+  PART 2:
+    The program "a2_q2" is designed to create a 6x9 array that is then randomly populated with
+    random values. the array is then copied using many methods such as shallow, deep and regular pointer copy.
+    this then displays the difference between each method of copying as well as displaying the address of each
+    array and variable.
+    The files and functions that are used in the source code "a2_q2.c" are named:
+     a2q1.c with functions using:
+       double_array
+       randomize_array
+       rand_double
+       print_array
+       free_array
+     a2q2.c with funcions using:
+       shallow_copy
+       deep_copy
+       print_struct
+    other libraries and defines for this program us located in the header file random.h
+
+  QUESTIONS:
+    Q2b:
+        In this question we assign different values in each array. This is to differentiate between the copy
+        methods. A regular pointer that points to the struct (a2 = a1) will just refer to a1 and display the
+        a1 values. shallow copy copies the pointer and the content which allows it to change values when
+        a1 contents are changed. Deep copy duplicates the content but ensures that the pointer is not copied.
+
+    Q2c:
+        In this question this mainly shows what shallow copy does. Since a1 = a2 it makes sense that the
+        shallow_copy pointer would indirectly point to a2 as any changes in a2 will also be apparent in
+        shallow copy however. Once b1 was created and was made so a2 was set to b1, the addresses of a1 and a2
+        were changed but not for shallow copy indicating as the array for shallow copy was different.
+
+Compiling the Code
+
+	make (creates all object files)
+    make clean (removes the object files)
+
+Running the Code
+
+  PART 1:
+    ./q1
+
+  PART 2:
+    ./q2
+
+Written By Trevor Le, Student ID: 1044055
